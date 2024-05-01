@@ -3,7 +3,7 @@
 <head>
   <style>
     body {
-      background-image: url("Macintoch HD/Utenti/alicecristanini/Scrivania/foto per html/Google Maps barcellona blanes.pdf");
+      background-image: url("Macintoch HD/Utenti/alicecristanini/Scrivania/foto per html/mappa barcellona blanes.pdf");
       background-color: #cccccc;
       height: 500px;
       background-position: center;
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div>
-      <img src="Macintoch HD/Utenti/alicecristanini/Scrivania/foto per html/da Barcellona a Blanes- Google Maps.pdf" alt="mappa strada barcellona blanes">
+      <img src="Macintoch HD/Utenti/alicecristanini/Scrivania/foto per html/mappa barcellona blanes.pdf" alt="strada barcellona blanes">
       <div>
 
       </div>
