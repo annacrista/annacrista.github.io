@@ -1,0 +1,22 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://cdn02.visitbarcelona.com/files/5445-21427-Imagen/Parc_Ciutadella_c2.jpg");
+      background-color: #cccccc;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    </style>
+</head>
+<body>
+     <p><b><i><h1>Le mie foto</h1></i></b>
+        
+        <img src="Macintoch HD/Utenti/alicecristanini/Scrivania/foto per html/parcciutadella1.pdf">
+    
+</body>
+</html>
