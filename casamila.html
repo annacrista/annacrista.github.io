@@ -11,6 +11,24 @@
       background-size: cover;
       position: relative;
     }
+    li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  }
+
+  li:last-child {
+  border-bottom: none;
+  }
+
+  li a.active {
+  background-color: hsl(0, 100%, 50%);
+  color: yellow;
+  }
+
+  li a:hover:not(.active) {
+  background-color: #555;
+  color: red;
+  }
     </style>
 </head>
 <body>
@@ -18,7 +36,7 @@
         <p><b><i><h1>CASA MILÀ</h1></i></b>
         <i><h2>Casa Milà, conosciuta anche come LA PEDRERA è uno degli edifici più visitati</h2></i>
         <ul><h3>
-          <li><a href="barcellona.html">Home viaggio</a></li>
+          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
           <li><a href="fotomila.html">Le mie foto di Casa Milà</a></li>
           <li><a href="newsmila.html">Notizie varie</a></li>
           <li><a href="orarimila.html">Orari e Prezzi</a></li>
