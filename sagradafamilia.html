@@ -19,7 +19,24 @@
       color: white;
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
-    
+    li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  }
+
+  li:last-child {
+  border-bottom: none;
+  }
+
+  li a.active {
+  background-color: hsl(0, 100%, 50%);
+  color: yellow;
+  }
+
+  li a:hover:not(.active) {
+  background-color: #555;
+  color: red;
+  }
     </style>
 </head>
 <body>
@@ -27,7 +44,7 @@
         <p><b><i><h1>LA SAGRADA FAMILIA</h1></i></b>
         <i><h2>La Sagrada Familia è uno dei simboli di Barcellona</h2></i>
         <ul><h3>
-          <li><a href="barcellona.html">Home viaggio</a></li>
+          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
           <li><a href="fotosagradafamilia.html">foto Sagrada Familia</a></li>
           <li><a href="newssagrada.html">Alcune notizie</a></li>
           <li><a href="orarisagrada.html">Orari e Prezzi</a></li>
