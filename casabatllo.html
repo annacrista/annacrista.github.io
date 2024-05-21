@@ -17,6 +17,24 @@
     } 
      ul {text-align:left; color: #000000}
      a {text-align:left; color: #000000}
+     li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  }
+
+  li:last-child {
+  border-bottom: none;
+  }
+
+  li a.active {
+  background-color: hsl(0, 100%, 50%);
+  color: yellow;
+  }
+
+  li a:hover:not(.active) {
+  background-color: #555;
+  color: red;
+  }
     </style>
 </head>
 <body>
@@ -26,7 +44,7 @@
         <p><i><h2>Casa Batllo, un edificio considerato una delle creazioni piu' originali dell'architetto Antoni Gaudi'</h2></i></p>
         <h3>
         <ul>
-          <li><a href="barcellona.html">Home viaggio</a></li>
+          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
           <li><a href="fotobatllo.html">Le mie foto di Casa Batllo</a></li>
           <li><a href="newsbattlo.html">Cenni storici</a></li>
           <li><a href="oraribattlo.html">Orari e Prezzi</a></li>
