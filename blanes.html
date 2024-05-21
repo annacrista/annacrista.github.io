@@ -19,6 +19,24 @@
     }
     ul {text-align:left; color: yellow}
     a {text-align:left; color: yellow}
+    li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+  }
+
+  li:last-child {
+  border-bottom: none;
+  }
+
+  li a.active {
+  background-color: hsl(0, 100%, 50%);
+  color: yellow;
+  }
+
+  li a:hover:not(.active) {
+  background-color: #555;
+  color: red;
+  }
     </style>
 </head>
 <body>
@@ -26,7 +44,7 @@
         <p><b><i><h1>BLANES</h1></i></b>
         <i><h2>Escursione di un giorno in questa bella località della Costa Brava nei pressi di Lloret de Mar</h2></i>
         <ul><h3>
-          <li><a href="barcellona.html">Home viaggio</a></li>
+          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
           <li><a href="fotoblanes.html">Le mie foto di Blanes</a></li>
           <li><a href="newsblanes.html">Cosa vedere</a></li>
           <li><a href="dove blanes.html">Dove si trova</a></li>
