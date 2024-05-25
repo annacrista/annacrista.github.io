@@ -15,6 +15,63 @@
       background-size: cover;
       position: relative;
     }
+    .navbar {
+    overflow: hidden;
+    background-color: #2d6db8; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 22px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(12, 15, 180);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(12, 15, 180);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
     h1 {text-align:center; color: yellow;
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
@@ -33,7 +90,7 @@
     border: 1px solid #555;
     }
 
-  li a {
+  li b {
   display: block;
   color: #000;
   padding: 16px 16px;
@@ -48,12 +105,12 @@
   border-bottom: none;
   }
 
-  li a.active {
+  li b.active {
   background-color: hsl(0, 100%, 50%);
   color: yellow;
   }
 
-  li a:hover:not(.active) {
+  li b:hover:not(.active) {
   background-color: #555;
   color: red;
   }
@@ -64,10 +121,10 @@
         <p><b><i><h1>BLANES</h1></i></b>
         <i><h2>Escursione di un giorno in questa bella località della Costa Brava nei pressi di Lloret de Mar</h2></i>
         <ul><h3>
-          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
-          <li><a href="fotoblanes.html">Le mie foto di Blanes</a></li>
-          <li><a href="newsblanes.html">Cosa vedere</a></li>
-          <li><a href="dove blanes.html">Dove si trova</a></li>
+          <li><b class="active" href="barcellona.html">Home viaggio</b></li>
+          <li><b href="fotoblanes.html">Le mie foto di Blanes</b></li>
+          <li><b href="newsblanes.html">Cosa vedere</b></li>
+          <li><b href="dove blanes.html">Dove si trova</b></li>
         </h3></ul>
     </body>
 </body>
