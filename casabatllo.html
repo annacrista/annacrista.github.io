@@ -179,11 +179,30 @@
         <p><b><i><h1>CASA BATLLO</h1></i></b></p>
         <p><i><h2>Casa Batllo, un edificio considerato una delle creazioni piu' originali dell'architetto Antoni Gaudi'</h2></i></p>
         <h3>
-        
+          <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <a href="fotobatllo.html">Le mie foto di Casa Batllo</a>
           <a href="newsbattlo.html">Cenni storici</a>
           <a href="oraribattlo.html">Orari e Prezzi</a>
+          </div>
         </h3>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰ Scopri Casa Batllo</button>  
+          <h2>Collapsed Sidebar</h2>
+          <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>      
     </body>
 </body>
 </html>
