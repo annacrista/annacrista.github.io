@@ -1,6 +1,7 @@
 <DOCTYPE! html>
 <html>
 <head> 
+
   <style>
     body {
       background-image: url("https://mywowo.net/media/images/cache/barcellona_parc_guell_02_visita_jpg_1200_630_cover_85.jpg");
@@ -27,7 +28,7 @@
   border: 1px solid #555;
 }
 
-li a {
+li b {
   display: block;
   color: #000;
   padding: 16px 16px;
@@ -43,12 +44,12 @@ li:last-child {
   border-bottom: none;
 }
 
-li a.active {
+li b.active {
   background-color: hsl(0, 100%, 50%);
   color: yellow;
 }
 
-li a:hover:not(.active) {
+li b:hover:not(.active) {
   background-color: #555;
   color: red;
 }
@@ -56,14 +57,48 @@ li a:hover:not(.active) {
     </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Luoghi primo giorno <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="parcguell.html">Parc Guell</a>
+        <a href="parcdelaciutadella.html">Parc de la Ciutadella</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Luoghi secondo giorno <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="blanes.html">Blanes</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Luoghi terzo giorno <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="casabatllo.html">Casa Batllo</a>
+        <a href="casamila.html">Casa Mila'</a>
+        <a href="sagradafamilia.html">Sagrada Familia</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Luoghi quarto giorno <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="barceloneta.html">Barceloneta</a>
+        <a href="gambademariscal.html">La Gamba de Mariscal</a>
+        <a href="catedralbarcelona.html">Catedral de Barcelona</a>
+        <a href="boqueria.html">mercado de la Boqueria</a>
+        <a href="arcdetriomf.html">Arco di trionfo</a>
+      </div>
+    </div> 
+  </div>
     <body> 
         <p><b><i><h1>PARC GUELL</h1></i></b>
         <i><h2>Il parco Güell è una delle attrazioni principali di Barcellona</h2></i><br/>
         <ul><h3>
-          <li><a class="active" href="barcellona.html">Home viaggio</a></li>
-          <li><a href="fotoparkguell.html">Foto Park Güell</a></li>
-          <li><a href="newsguell.html">Alcune notizie</a></li>
-          <li><a href="orariguell.html">Orari e Prezzi</a></li>          
+          <li><b class="active" href="barcellona.html">Home viaggio</b></li>
+          <li><b href="fotoparkguell.html">Foto Park Güell</b></li>
+          <li><b href="newsguell.html">Alcune notizie</b></li>
+          <li><b href="orariguell.html">Orari e Prezzi</b></li>          
         </h3></ul>
     </body>
 </body>
