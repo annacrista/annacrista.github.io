@@ -78,42 +78,63 @@
     h2 {text-align:center; color: yellow;
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
-    ul {text-align:left; color: yellow}
-    a {text-align:left; color: yellow}
-    
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    background-color: yellow;
-    border: 1px solid #555;
-    }
+    .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-  li b {
-  display: block;
-  color: #000;
-  padding: 16px 16px;
+.sidebar a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  }
-    li {
-  text-align: center;
-  border-bottom: 1px solid #555;
-  }
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-  li:last-child {
-  border-bottom: none;
-  }
+.sidebar a:hover {
+  color: #f1f1f1;
+}
 
-  li b.active {
-  background-color: hsl(0, 100%, 50%);
-  color: yellow;
-  }
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
-  li b:hover:not(.active) {
-  background-color: #555;
-  color: red;
-  }
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
     </style>
 </head>
 <body>
@@ -154,11 +175,13 @@
     <body> 
         <p><b><i><h1>BLANES</h1></i></b>
         <i><h2>Escursione di un giorno in questa bella località della Costa Brava nei pressi di Lloret de Mar</h2></i>
-        <ul><h3>
-          <li><b href="fotoblanes.html">Le mie foto di Blanes</b></li>
-          <li><b href="newsblanes.html">Cosa vedere</b></li>
-          <li><b href="dove blanes.html">Dove si trova</b></li>
-        </h3></ul>
+        <h3>
+          <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="fotoblanes.html">Le mie foto di Blanes</a>
+          <a href="newsblanes.html">Cosa vedere</a>
+          <a href="dove blanes.html">Dove si trova</a>
+        
     </body>
 </body>
 </html>
