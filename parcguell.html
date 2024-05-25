@@ -182,11 +182,31 @@
     <body> 
         <p><b><i><h1>PARC GUELL</h1></i></b>
         <i><h2>Il parco Güell è una delle attrazioni principali di Barcellona</h2></i><br/>
-        <h3>          
+        <h3> 
+          <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>         
           <a href="fotoparkguell.html">Foto Park Güell</a>
           <a href="newsguell.html">Alcune notizie</a>
-          <a href="orariguell.html">Orari e Prezzi</a>          
+          <a href="orariguell.html">Orari e Prezzi</a> 
+          </div>         
         </h3>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰ Scopri Parc Güell</button>  
+          <h2>Collapsed Sidebar</h2>
+          <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
     </body>
 </body>
 </html>
