@@ -179,11 +179,31 @@
     <body> 
         <p><b><i><h1>LA SAGRADA FAMILIA</h1></i></b>
         <i><h2>La Sagrada Familia è uno dei simboli di Barcellona</h2></i>
-        <ul><h3>
-          <li><a href="fotosagradafamilia.html">foto Sagrada Familia</a></li>
-          <li><a href="newssagrada.html">Alcune notizie</a></li>
-          <li><a href="orarisagrada.html">Orari e Prezzi</a></li>
-        </h3></ul>
+        <h3>
+          <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a href="fotosagradafamilia.html">foto Sagrada Familia</a>
+          <a href="newssagrada.html">Alcune notizie</a>
+          <a href="orarisagrada.html">Orari e Prezzi</a>
+        </div>
+        </h3>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰ Scopri Sagrada Familia</button>  
+          <h2>Collapsed Sidebar</h2>
+          <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
     </body>
 </body>
 </html>
